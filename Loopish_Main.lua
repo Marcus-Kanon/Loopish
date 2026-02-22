@@ -38,6 +38,9 @@ end
 
 -- 6. LOOP
 local function Main()
+    -- Run background logic
+    TM.on_defer_tick()
+    
     local visible, open = r.ImGui_Begin(ctx, 'Loopish', true)
     
     if visible then
